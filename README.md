@@ -30,7 +30,14 @@
      db.create_all()
      ```
    - This will create all tables defined in your models.
+   **add new cloumn (AGE) to  database tables:**
+   Inside the shell, run:
+from app import create_app, db
+app = create_app()
 
+app.app_context().push()
+db.drop_all()
+db.create_all()
 5. **Run the Flask application:**
    ```sh
    flask run
